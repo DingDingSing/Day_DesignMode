@@ -16,6 +16,10 @@ const BubbleSort = (arr: number[]) => {
   return arr;
 };
 
+// 是原地排序么 - 是
+// 是稳定的排序算法么 - 是
+// 时间复杂度 最好O(n) 最差 O(n2) 平均 O(n2)
+
 const arr = [1,2,3,4];
 
 BubbleSort(arr);

@@ -1,0 +1,1 @@
+const QuickSort = (arr: number[]) => {};
