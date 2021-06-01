@@ -15,6 +15,7 @@
  * @return {ListNode}
  */
 var deleteDuplicates = function (head) {
+  if (head === null) return null;
   const node = new ListNode();
   node.next = head;
 
