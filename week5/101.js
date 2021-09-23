@@ -17,8 +17,8 @@ var isSymmetric = function (root) {
 };
 
 var dfs = (root1, root2) => {
-  if (root1.left == null && root2.right == null) return true;
-  if (root1.left == null || root2.right == null) return false;
+  if (root1 == null && root2 == null) return true;
+  if (root1 == null || root2 == null) return false;
   if (root1.val !== root2.val) {
     return false;
   }
