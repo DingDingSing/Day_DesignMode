@@ -19,6 +19,7 @@
     "removeComments": true,
     "pretty": true,
     "strictPropertyInitialization": true,
+    "sourceMap": true,
     "paths": {
       "@/*": ["src/*"]
     }

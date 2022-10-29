@@ -15,5 +15,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
