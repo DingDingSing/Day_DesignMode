@@ -44,3 +44,5 @@ function mergeTwoLists_2022(
 
   return dummy.next;
 }
+
+export default mergeTwoLists_2022;
