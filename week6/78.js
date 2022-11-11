@@ -10,26 +10,25 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
+
+
 var subsets = function (nums) {
-  let result = [];
-  const dfs = (nums, k, path) => {
-    // nums 可选列表
-    // k 决策阶段
-    // path 路径
-    // 退出条件
+  var result = [];
+  var dfs = (nums, k, path) => {
     if (k === nums.length) {
-      
       result.push([...path]);
       return;
     }
-
-    // 决策阶段
-    // 放入
     dfs(nums, k + 1, [...path, nums[k]]);
-    // 不放入
     dfs(nums, k + 1, [...path]);
   };
 
   dfs(nums, 0, []);
   return result;
 };
+
+console.time('sort')
+const ss = subsets([1, 2, 3]);
+console.timeEnd("sort")
+
+// console.log("ss", ss);
