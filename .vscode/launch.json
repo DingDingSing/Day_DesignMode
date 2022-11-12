@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/2022/1768.ts",
+      "program": "${workspaceFolder}/2022/index.ts",
       "outFiles": ["${workspaceFolder}/**/*.js"],
       "runtimeArgs": ["-r", "ts-node/register"]
     }
