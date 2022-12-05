@@ -12,7 +12,9 @@ function longestPalindrome(s: string): string {
   let result = "";
 
   for (let i = 0; i < s.length - 1; i++) {
+    // 奇数
     const odd = palindrome(s, i, i + 1);
+    // 偶数
     const even = palindrome(s, i, i);
     result = compareMaxLen(compareMaxLen(odd, even), result);
   }
@@ -23,6 +25,7 @@ function compareMaxLen(s1: string, s2: string) {
 }
 
 function palindrome(s: string, i: number, j: number): string {
+  // 中心扩散方法 找到回文字符串
   while (i >= 0 && j < s.length) {
     if (s[i] == s[j]) {
       i--;
