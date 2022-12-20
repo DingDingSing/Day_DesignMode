@@ -12,6 +12,7 @@ const _quickSort_p = (arr: number[], p: number, r: number) => {
 };
 
 const _partition = (arr: number[], p: number, r: number): number => {
+  console.log("arr", arr, "p", p, "r", r);
   let i = p - 1;
   for (let j = p; j < r; ++j) {
     if (arr[j] < arr[r]) {
