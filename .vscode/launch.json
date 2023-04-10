@@ -5,13 +5,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "name": "Launch Program js",
+      "program": "${workspaceFolder}/promise.js",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/index.ts",
-      "outFiles": ["${workspaceFolder}/**/*.js"],
-      "runtimeArgs": ["-r", "ts-node/register"]
-    }
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Launch Program",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "program": "${workspaceFolder}/index.ts",
+    //   "outFiles": ["${workspaceFolder}/**/*.js"],
+    //   "runtimeArgs": ["-r", "ts-node/register"]
+    // }
   ]
 }
