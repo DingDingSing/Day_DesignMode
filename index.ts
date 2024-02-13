@@ -52,4 +52,26 @@
 // const r1 = temp(3, 4);
 // console.log("r1", r1);
 
-import './promise.js'
+// import './classics150/88'
+
+function majorityElement(nums: number[]): number {
+  const t = [];
+  for (let i = 0; i < nums.length; i++) {
+    const n = nums[i];
+    if (t[n]) {
+      t[n] += 1;
+    } else {
+      t[n] = 1;
+    }
+  }
+  console.log("t", t);
+  const max = Math.max(...t.filter((i) => i));
+  console.log("max", max);
+  return t.findIndex((item) => item === max);
+}
+
+let nums = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+const d = majorityElement(nums);
+
+console.log("ddd", d);
